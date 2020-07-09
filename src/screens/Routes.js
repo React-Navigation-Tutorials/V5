@@ -30,7 +30,7 @@ export const Routes = () => {
         } else {
           setLoading(false);
         }
-        console.log(user);
+        // console.log(user);
       })
       .catch(err => {
         console.log(err);
@@ -50,7 +50,7 @@ export const Routes = () => {
       // screenOptions={{
       //   header: () => null
       // }}
-      initialRoutName="Login">
+      initialRouteName="Login">
       {user ? <AppTabs /> : <AuthStack />}
     </NavigationContainer>
   );
